@@ -97,3 +97,4 @@ final_input = final_input[model.feature_names_in_]
 if st.button("Predict Addicted Score"):
   prediction = model.predict(final_input)[0]
   st.success(f"🎯 Predicted Addicted Score: **{prediction:.2f}**")
+  st.write("1 = Kecanduan Rendah, 10 = Sangat Kecanduan.")
