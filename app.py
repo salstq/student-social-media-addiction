@@ -1,4 +1,7 @@
 import streamlit as st
+import pandas as pd
+import joblib
+
 st.title("📱 Social Media Addiction Prediction")
 st.write("Masukkan data pengguna untuk memprediksi tingkat kecanduan media sosial.")
 
