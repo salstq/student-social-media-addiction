@@ -15,11 +15,12 @@ st.write("Masukkan data pengguna untuk memprediksi tingkat kecanduan media sosia
 # Input Numerik
 # ============================
 age = st.number_input("Age", min_value=15, max_value=60, value=21)
-avg_usage = st.slider("Average Daily Usage (Hours)", 0.0, 12.0, 7.5)
-sleep_hours = st.slider("Sleep Hours Per Night", 0.0, 12.0, 6.0)
+avg_usage = st.slider("Average Daily Usage (Hours)", 0, 12, 7)
+sleep_hours = st.slider("Sleep Hours Per Night", 0, 12, 6)
 mental_health = st.slider("Mental Health Score (1–10)", 1, 10, 6)
+st.write("1 = Buruk, 10 = Sangat Baik.")
 conflicts = st.slider("Conflicts Over Social Media", 0, 10, 3)
-
+st.write("Banyak konflik akibat sosial media.")
 
 num_df = pd.DataFrame([[age, avg_usage, sleep_hours, mental_health, conflicts]],
 columns=[
