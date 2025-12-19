@@ -65,11 +65,11 @@ relationship_cols = [
 
 
 for col in platform_cols:
-cat_df[col] = 1 if col == f'Most_Used_Platform_{platform}' else 0
+  cat_df[col] = 1 if col == f'Most_Used_Platform_{platform}' else 0
 
 
 for col in relationship_cols:
-cat_df[col] = 1 if col == f'Relationship_Status_{relationship}' else 0
+  cat_df[col] = 1 if col == f'Relationship_Status_{relationship}' else 0
 
 
 # ============================
